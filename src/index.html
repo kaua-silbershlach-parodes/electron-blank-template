@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:" />
+<title>Electron Blank Template</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <img class="logo" src="icon.png" alt="App icon" />
+    <div class="titles">
+      <h1>Electron Blank Template</h1>
+      <p class="subtitle">Blank desktop shell by A Elite Estrangeira</p>
+    </div>
+    <span class="version-badge">v<span id="app-version">…</span></span>
+  </header>
+
+  <main class="content">
+    <section class="card welcome">
+      <h2>Start here</h2>
+      <p>
+        This is a blank template: a working window, a secure preload bridge,
+        the house icon, and GitHub auto-updates wired end to end. Replace this
+        panel with your product's interface and keep the shell.
+      </p>
+    </section>
+
+    <section class="card updates">
+      <div class="updates-head">
+        <h2>Updates</h2>
+        <span id="update-state" class="state state-idle">idle</span>
+      </div>
+      <p id="update-message" class="update-message">
+        The app checks GitHub Releases for a newer version.
+      </p>
+      <div class="progress-wrap" hidden id="progress-wrap">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="actions">
+        <button id="btn-check" class="btn">Check for updates</button>
+        <button id="btn-install" class="btn btn-primary" hidden>Restart to update</button>
+      </div>
+      <ul id="update-log" class="update-log"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 A Elite Estrangeira — All rights reserved.</span>
+  </footer>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
